@@ -11,7 +11,7 @@ struct Buffer{
 
 int init_buffer(Buffer *res, char *argv);
 void print_hex(Buffer buff);
-void print_b64(Buffer buff);
+void print_b64(Buffer *buff);
 int compare(Buffer buff1, Buffer buff2);
 int raw_string_to_buff(Buffer* res, char* str, size_t len);
 int xor_opti(Buffer *res, Buffer buff1, Buffer buff2);

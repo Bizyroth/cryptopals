@@ -14,7 +14,7 @@ int main(int argc, char *argv[]){
 		return 1;
 	}
 
-	if(init_buffer(buff2, argv[2])!=0){
+/*	if(init_buffer(buff2, argv[2])!=0){
 		fprintf(stdout,"Error during allocation\n");
 		return 1;
 	}
@@ -28,8 +28,9 @@ int main(int argc, char *argv[]){
 		fprintf(stderr, "Bad length\n");
 		return 1;
 	}
-	
-	print_hex(*res);
+*/	
+	print_hex(*buff1);
+	print_b64(buff1);
 
 	return 0;
 }
